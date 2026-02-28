@@ -1,6 +1,6 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
+ * Họ và tên: [Nguyễn Vũ Đăng Khoa]
+ * MSSV:      [PS49647]
  * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
  *****************************************************************************/
 
@@ -21,74 +21,58 @@
 // Viết chương trình C thực hiện các chức năng trên
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <time.h>
+
+void chucNang1();
+void chucNang2();
+void chucNang3();
+void chucNang4();
+void chucNang5();
+void chucNang6();
+void chucNang7();
+void chucNang8();
+void chucNang9();
+void chucNang10();
+
+int UCLN(int a, int b);
 
 int main() {
-    int chonChucNang;
+    int chon;
 
     do {
-        printf("Chon chuc nang:\n");
+        printf("\n=========== ASM2 MENU ===========\n");
         printf("1. Kiem tra so nguyen\n");
-        printf("2. Tim Uoc so chung va boi so chung cua 2 so\n");
-        printf("3. Tinh tien cho quan Karaoke\n");
+        printf("2. Tim UCLN & BCNN\n");
+        printf("3. Tinh tien Karaoke\n");
         printf("4. Tinh tien dien\n");
-        printf("5. Chuc nang doi tien\n");
-        printf("6. Tinh lai suat vay ngan hang vay tra gop\n");
+        printf("5. Doi tien\n");
+        printf("6. Lai suat vay tra gop\n");
         printf("7. Vay tien mua xe\n");
-        printf("8. Sap xep thong tin sinh vien\n");
+        printf("8. Sap xep sinh vien\n");
         printf("9. Game FPOLY-LOTT\n");
         printf("10. Tinh toan phan so\n");
         printf("0. Thoat\n");
-        printf("Nhap lua chon cua ban: ");
-        scanf("%d", &chonChucNang);
+        printf("Chon: ");
+        scanf("%d", &chon);
 
-        switch (chonChucNang) {
-            case 1:
-                // Gọi hàm kiểm tra số nguyên
-                printf("DA CHON CHUC NANG 1: KIEM TRA SO NGUYEN\n");
-                break;
-            case 2:
-                // Gọi hàm tìm Ước số chung và bội số chung
-                printf("DA CHON CHUC NANG 2: TIM UOC SO CHUNG VA BOI SO CHUNG CUA 2 SO\n");
-                break;
-            case 3:
-                // Gọi hàm tính tiền cho quán Karaoke
-                printf("DA CHON CHUC NANG 3: TINH TIEN CHO QUAN KARAOKE\n");
-                break;
-            case 4:
-                // Gọi hàm tính tiền điện
-                printf("DA CHON CHUC NANG 4: TINH TIEN DIEN\n");
-                break;
-            case 5:
-                // Gọi hàm đổi tiền
-                printf("DA CHON CHUC NANG 5: DOI TIEN\n");
-                break;
-            case 6:
-                // Gọi hàm tính lãi suất vay ngân hàng
-                printf("DA CHON CHUC NANG 6: TINH LAI SUAT VAY NGAN HANG VAY TRA GOP\n");
-                break;
-            case 7:
-                // Gọi hàm vay tiền mua xe
-                printf("DA CHON CHUC NANG 7: VAY TIEN MUA XE\n");
-                break;
-            case 8:
-                // Gọi hàm sắp xếp thông tin sinh viên
-                printf("DA CHON CHUC NANG 8: SAP XEP THONG TIN SINH VIEN\n");
-                break;
-            case 9:
-                // Gọi hàm game FPOLY-LOTT
-                printf("DA CHON CHUC NANG 9: GAME FPOLY-LOTT\n");
-                break;
-            case 10:
-                // Gọi hàm tính toán phân số
-                printf("DA CHON CHUC NANG 10: TINH TOAN PHAN SO\n");
-                break;
-            case 0:
-                printf("Thoat chuong trinh.\n");
-                break;
-            default:
-                printf("Lua chon khong hop le. Vui long chon lai.\n");
+        switch(chon){
+            case 1: chucNang1(); break;
+            case 2: chucNang2(); break;
+            case 3: chucNang3(); break;
+            case 4: chucNang4(); break;
+            case 5: chucNang5(); break;
+            case 6: chucNang6(); break;
+            case 7: chucNang7(); break;
+            case 8: chucNang8(); break;
+            case 9: chucNang9(); break;
+            case 10: chucNang10(); break;
+            case 0: printf("Thoat chuong trinh.\n"); break;
+            default: printf("Lua chon khong hop le!\n");
         }
-    } while (chonChucNang != 0);
+    } while(chon != 0);
 
     return 0;
 }
